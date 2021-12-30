@@ -1,0 +1,18 @@
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+body{
+  background: linear-gradient(45deg, #868787 10%, #A2C7E5 90%);
+  padding: 150px;
+}
+p{
+  padding: 50px;
+  font-size: 25px;
+  color: white;
+}
+.topnav{
+  color: white;
+}

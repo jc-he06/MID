@@ -1,0 +1,58 @@
+<html>
+  <link rel="stylesheet" href="style_registration.css">
+  <body>
+   <a class="back_btn" href="./login2.php">back</a>
+    <div class="user">
+
+    <header class="user__header">
+        
+        <h1 class="user__title">Medical Imaging Freedom begins Here!</h1>
+    </header>
+    
+    <form class="form" method="post" action="./insert_registration.php">
+      <div class="form__group">
+            <input type="text" placeholder="First Name" class="form__input" name="fname" required/>
+        </div>
+      <div class="form__group">
+            <input type="text" placeholder="Last Name" class="form__input" name="lname" required/>
+        </div>
+        
+        <div class="form__group">
+            <input type="email" placeholder="Email" class="form__input" name="email" required />
+        </div>
+        
+        <div class="form__group">
+            <input type="password" placeholder="Password" class="form__input" name="password" required/>
+        </div>
+
+        <div class="form__group" id="hospital">
+        </div>
+        <div class="form__group" id="provider_id">
+        </div>
+
+        <input type="radio" id="patient" name="user_type" value="patient" onclick="remove_fields()" required>
+        <label for="patient">Patient</label>
+        <input type="radio" id="doctor" name="user_type" value="doctor" onclick="add_fields()" required>
+        <label for="patient">Doctor</label>
+        <input type="radio" id="radiologist" name="user_type" value="radiologist" onclick="add_fields()" required>
+        <label for="patient">Radiologist</label>
+
+        <button class="btn" type="submit" name="Submit" id="Submit">Register</button>
+    </form>
+</div>
+    
+  </body>
+  
+</html>
+<script>
+
+function add_fields(){
+  document.getElementById("hospital").innerHTML="<input type='text' placeholder='Hospital Name' class='form__input' name='hospital' required/>";
+  document.getElementById("provider_id").innerHTML="<input type='text' placeholder='Provider ID' class='form__input' name='provider_id' pattern='[0-9]{10}' title='10 digit provider id' required/>";
+}
+
+function remove_fields(){
+  document.getElementById("hospital").innerHTML="";
+  document.getElementById("provider_id").innerHTML="";
+}
+</script>

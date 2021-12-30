@@ -1,0 +1,28 @@
+body{
+	background: #e2e2e5;
+    font-family: Verdana, Sans-serif;
+}
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+ 	padding: 0 15px;
+}
+
+.gallery_item{
+
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+.gallery_item img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.img_text{
+  padding: 15px;
+  text-align: center;
+}

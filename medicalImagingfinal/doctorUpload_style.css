@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+  background-color: #eeeeee;
+}
+.file-upload {
+  background-color: #ffffff;
+  width: 600px;
+  margin: 0% auto;
+  padding: 60px;
+}
+
+/* BUTTON */
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: black;
+  background: #e2e2e5;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #e2e2e5;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.file-upload-btn:hover {
+  background: #686868;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+/* PLACEHOLDER */
+.file-upload-preview {
+  display: none;
+  text-align: center;
+}
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.file-upload-placeholder {
+  margin-top: 20px;
+  border: 4px dashed #686868;
+  position: relative;
+}
+.image-dropping,
+.file-upload-placeholder:hover {
+  background-color: #686868;
+  border: 4px dashed #fff;
+}
+.drag-text {
+  text-align: center;
+}
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #black;
+  padding: 60px 0;
+}
+
+/* PREVIEW */
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+/* REMOVE */
+.file-upload-remove {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+form{
+  padding: 5px;
+}
+h1{
+  text-align: center;
+}
+.topnav{
+  padding: 10px;
+  background-color: #686868;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
